@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}"
+</head>
+<body>
+  <div class="container my-5">
+      {% include 'header.html' %}
+    <h1 class="text-center my-5">Our designers</h1>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/1200x/0a/f5/ac/0af5ac1c057089dd84526c886824f9a9.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Designed by layan</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/originals/39/36/2c/39362c486c698dca42d2f3b0e4070131.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Designed by ALYA</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/originals/97/e6/c2/97e6c26d3dfa25ede8fc8a582948d362.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Designed by Sara</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+      {% include 'footer.html' %}
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

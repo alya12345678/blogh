@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our fashion blog</title>
+  <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<style >
+  body{
+    color: #bb2323;
+    background-color: rgb(179, 231, 231);
+    line-height: 2.3em;
+  }
+</style>
+<body>
+
+
+  <div class="container my-5">
+      {% include 'header.html' %}
+    <div class="row mt-5">
+      <div class="col-md-8">
+        <h1> fashion blog</h1>
+        <p class="lead">Welcome to the fashion blog! Fashion is not just a product; It is the embodiment of the identity of individuals, and the way they express themselves. Fashion is not only related to fashion, it is about everything around us.
+          If you have any questions or inquiries, we can receive your suggestions.</p>
+        <p>Thanks for visiting us.</p>
+      </div>
+
+    </div>
+      {% include 'footer.html' %}
+  </div>
+   <!-- Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ 
+</body>
+</html>

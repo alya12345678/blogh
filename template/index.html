@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fashion blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+
+
+<div class="container my-5">
+    {% include 'header.html' %}
+    <h1 class="mb-5 mt-3">fashion blog</h1>
+
+    <ul class="list-group mb-5">
+        {% for post in posts %}
+        <li class="list-group-item">
+            <a href="{% url 'post' post.pk %}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    {% include 'footer.html' %}
+</div>
+
+
+
+</body>
+</html>
